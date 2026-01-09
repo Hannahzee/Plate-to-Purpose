@@ -15,12 +15,13 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
+            background: #f5f5f5;
         }
         
         .hero {
             background: linear-gradient(135deg, #4A90A4 0%, #2E5F75 100%);
             color: white;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         
@@ -67,12 +68,12 @@
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 40px 20px;
         }
         
         .intro {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         
         .intro h2 {
@@ -89,9 +90,116 @@
             line-height: 1.8;
         }
         
+        .nonprofits {
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        
+        .nonprofits h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+        
+        .nonprofit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .nonprofit-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #4A90A4;
+        }
+        
+        .nonprofit-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2E5F75;
+            transition: color 0.3s ease;
+        }
+        
+        .nonprofit-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .nonprofit-card a h3:hover {
+            color: #4A90A4;
+        }
+        
+        .nonprofit-card .subtitle {
+            font-style: italic;
+            color: #888;
+            margin-bottom: 15px;
+        }
+        
+        .nonprofit-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .impact-stat {
+            background: #4A90A4;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        
+        .nonprofit-card a .impact-stat:hover {
+            transform: scale(1.05);
+        }
+        
+        .partners {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .partners h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+        
+        .partner-logo {
+            font-size: 1.8em;
+            font-weight: 600;
+            padding: 20px 40px;
+            background: white;
+            color: #2c3e50;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .partners a {
+            text-decoration: none;
+        }
+        
         .how-it-works {
-            background: #f8f9fa;
-            padding: 60px 20px;
+            background: #e8e8e8;
+            padding: 40px 20px;
         }
         
         .steps {
@@ -134,92 +242,10 @@
             line-height: 1.6;
         }
         
-        .nonprofits {
-            padding: 60px 20px;
-        }
-        
-        .nonprofits h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 50px;
-            color: #2c3e50;
-        }
-        
-        .nonprofit-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .nonprofit-card {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            border-left: 5px solid #4A90A4;
-        }
-        
-        .nonprofit-card h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #2E5F75;
-        }
-        
-        .nonprofit-card .subtitle {
-            font-style: italic;
-            color: #888;
-            margin-bottom: 15px;
-        }
-        
-        .nonprofit-card p {
-            color: #555;
-            line-height: 1.7;
-        }
-        
-        .impact-stat {
-            background: #4A90A4;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 15px;
-            font-weight: 600;
-        }
-        
-        .partners {
-            background: #2c3e50;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        .partners h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-        
-        .partner-logos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 60px;
-            flex-wrap: wrap;
-        }
-        
-        .partner-logo {
-            font-size: 1.8em;
-            font-weight: 600;
-            padding: 20px 40px;
-            background: white;
-            color: #2c3e50;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        
         .cta {
-            background: linear-gradient(135deg, #FF8C42 0%, #E76F51 100%);
+            background: linear-gradient(135deg, #8BA888 0%, #6B8E6F 100%);
             color: white;
-            padding: 80px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
         
@@ -239,7 +265,7 @@
         .cta-button {
             display: inline-block;
             background: white;
-            color: #E76F51;
+            color: #6B8E6F;
             padding: 18px 40px;
             font-size: 1.2em;
             font-weight: 600;
@@ -253,6 +279,25 @@
             transform: translateY(-3px);
         }
         
+        .volunteer-cta {
+            background: #e8e8e8;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .volunteer-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4A90A4 0%, #2E5F75 100%);
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
         .volunteer-button:hover {
             transform: translateY(-3px);
         }
@@ -262,14 +307,6 @@
             color: white;
             padding: 40px 20px;
             text-align: center;
-        }
-        
-        .nonprofit-card a h3:hover {
-            color: #4A90A4 !important;
-        }
-        
-        .nonprofit-card a .impact-stat:hover {
-            transform: scale(1.05);
         }
         
         footer a {
@@ -296,10 +333,7 @@
     <div class="hero">
         <div class="icon">
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <!-- Water drop impact point -->
                 <circle cx="50" cy="50" r="4" fill="#2E5F75"/>
-                
-                <!-- Ripple waves - organic, water-like -->
                 <circle cx="50" cy="50" r="12" fill="none" stroke="#4A90A4" stroke-width="3" opacity="0.9"/>
                 <circle cx="50" cy="50" r="20" fill="none" stroke="#4A90A4" stroke-width="3" opacity="0.7"/>
                 <circle cx="50" cy="50" r="28" fill="none" stroke="#4A90A4" stroke-width="3" opacity="0.5"/>
@@ -322,90 +356,68 @@
             
             <div class="nonprofit-grid">
                 <div class="nonprofit-card">
-                    <a href="https://www.amorhealingkitchen.org/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <h3 style="color: #2E5F75; transition: color 0.3s ease;">AMOR Healing Kitchen</h3>
+                    <a href="https://www.amorhealingkitchen.org/" target="_blank">
+                        <h3>AMOR Healing Kitchen</h3>
                     </a>
                     <div class="subtitle">Fighting illness with food</div>
                     <p>AMOR delivers free, plant-based healing meals prepared by teen volunteers to people battling cancer and chronic illness. Your dinner helps provide a week of nourishing meals, snacks, and fresh flowers to someone who needs hope most.</p>
-                    <a href="https://www.amorhealingkitchen.org/" target="_blank" style="text-decoration: none;">
-                        <div class="impact-stat" style="transition: transform 0.3s ease;">100,000+ meals delivered</div>
+                    <a href="https://www.amorhealingkitchen.org/" target="_blank">
+                        <div class="impact-stat">100,000+ meals delivered</div>
                     </a>
                 </div>
                 
                 <div class="nonprofit-card">
-                    <a href="https://www.doorstodream.org/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <h3 style="color: #2E5F75; transition: color 0.3s ease;">Doors to Dream</h3>
+                    <a href="https://www.doorstodream.org/" target="_blank">
+                        <h3>Doors to Dream</h3>
                     </a>
                     <div class="subtitle">Building tomorrow's leaders</div>
                     <p>Doors to Dream mentors Charleston middle and high school students through service projects that transform both the students and their community. Your meal helps fund leadership programs creating the next generation of changemakers.</p>
-                    <a href="https://www.doorstodream.org/" target="_blank" style="text-decoration: none;">
-                        <div class="impact-stat" style="transition: transform 0.3s ease;">70 students mentored</div>
+                    <a href="https://www.doorstodream.org/" target="_blank">
+                        <div class="impact-stat">70 students mentored</div>
                     </a>
                 </div>
                 
                 <div class="nonprofit-card">
-                    <a href="https://letswalkchs.org/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <h3 style="color: #2E5F75; transition: color 0.3s ease;">Let's Walk</h3>
+                    <a href="https://letswalkchs.org/" target="_blank">
+                        <h3>Let's Walk</h3>
                     </a>
                     <div class="subtitle">Keeping seniors moving</div>
                     <p>Let's Walk pairs trained volunteers with people who need companionship to get outside and stay active. Your dining helps fund this free service that's proven to dramatically improve health and happiness.</p>
-                    <a href="https://letswalkchs.org/" target="_blank" style="text-decoration: none;">
-                        <div class="impact-stat" style="transition: transform 0.3s ease;">4,000+ walks completed</div>
+                    <a href="https://letswalkchs.org/" target="_blank">
+                        <div class="impact-stat">4,000+ walks completed</div>
                     </a>
                 </div>
                 
                 <div class="nonprofit-card">
-                    <a href="https://www.charlestonhope.org/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <h3 style="color: #2E5F75; transition: color 0.3s ease;">Charleston Hope</h3>
+                    <a href="https://www.charlestonhope.org/" target="_blank">
+                        <h3>Charleston Hope</h3>
                     </a>
                     <div class="subtitle">Mental health where kids need it</div>
                     <p>Charleston Hope provides mental health counseling directly in Title One schools during the school day, creating safe spaces where students can develop emotional resilience and build confidence.</p>
-                    <a href="https://www.charlestonhope.org/" target="_blank" style="text-decoration: none;">
-                        <div class="impact-stat" style="transition: transform 0.3s ease;">500+ counseling hours annually</div>
+                    <a href="https://www.charlestonhope.org/" target="_blank">
+                        <div class="impact-stat">500+ counseling hours annually</div>
                     </a>
                 </div>
                 
                 <div class="nonprofit-card">
-                    <a href="https://www.sharedcity.org/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <h3 style="color: #2E5F75; transition: color 0.3s ease;">Shared City</h3>
+                    <a href="https://www.sharedcity.org/" target="_blank">
+                        <h3>Shared City</h3>
                     </a>
                     <div class="subtitle">Making charity more effective</div>
                     <p>Shared City trains nonprofit leaders, donors, and volunteers to create lasting change rather than temporary relief. Your meal helps strengthen the entire Charleston nonprofit community by making charitable work more impactful.</p>
-                    <a href="https://www.sharedcity.org/" target="_blank" style="text-decoration: none;">
-                        <div class="impact-stat" style="transition: transform 0.3s ease;">Dozens of nonprofits trained</div>
+                    <a href="https://www.sharedcity.org/" target="_blank">
+                        <div class="impact-stat">Dozens of nonprofits trained</div>
                     </a>
                 </div>
                 
                 <div class="nonprofit-card">
-                    <a href="https://www.empoweredminds.org/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <h3 style="color: #2E5F75; transition: color 0.3s ease;">Empowered Minds</h3>
+                    <a href="https://www.empoweredminds.org/" target="_blank">
+                        <h3>Empowered Minds</h3>
                     </a>
                     <div class="subtitle">Teaching mindfulness in schools</div>
                     <p>Empowered Minds cultivates learning-ready and compassionate classrooms by teaching social and emotional skills through yoga and mindfulness in Charleston County schools. Your meal gives students tools to control their emotions and build confidence.</p>
-                    <a href="https://www.empoweredminds.org/" target="_blank" style="text-decoration: none;">
-                        <div class="impact-stat" style="transition: transform 0.3s ease;">1,000 students empowered weekly</div>
-                    </a>
-                </div>
-                
-                <div class="nonprofit-card">
-                    <a href="https://www.beamentornow.org/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <h3 style="color: #2E5F75; transition: color 0.3s ease;">Be A Mentor</h3>
-                    </a>
-                    <div class="subtitle">One caring adult changes everything</div>
-                    <p>Be A Mentor connects youth with caring adults who empower them to reach their full potential through one-on-one mentorship. Operating in 29 Lowcountry schools, they prove that every child is one caring relationship away from achieving their dreams.</p>
-                    <a href="https://www.beamentornow.org/" target="_blank" style="text-decoration: none;">
-                        <div class="impact-stat" style="transition: transform 0.3s ease;">400+ youth mentored</div>
-                    </a>
-                </div>
-                
-                <div class="nonprofit-card">
-                    <a href="https://www.madparkcommunity.org/" target="_blank" style="text-decoration: none; color: inherit;">
-                        <h3 style="color: #2E5F75; transition: color 0.3s ease;">MAD PARK</h3>
-                    </a>
-                    <div class="subtitle">Making health a way of life</div>
-                    <p>MAD PARK empowers youth, families, and educators with access to wellness resources, creating a sustainable health-centered culture in Charleston. Your meal helps ensure that health isn't a privilege but a right for every generation.</p>
-                    <a href="https://www.madparkcommunity.org/" target="_blank" style="text-decoration: none;">
-                        <div class="impact-stat" style="transition: transform 0.3s ease;">Building healthier futures</div>
+                    <a href="https://www.empoweredminds.org/" target="_blank">
+                        <div class="impact-stat">1,000 students empowered weekly</div>
                     </a>
                 </div>
             </div>
@@ -415,11 +427,11 @@
     <div class="partners">
         <h2>Our Restaurant Partners</h2>
         <div class="partner-logos">
-            <a href="https://www.eatatberkeleys.com/" target="_blank" style="text-decoration: none;">
-                <div class="partner-logo" style="transition: transform 0.3s ease;">Berkeley's</div>
+            <a href="https://www.eatatberkeleys.com/" target="_blank">
+                <div class="partner-logo">Berkeley's</div>
             </a>
-            <a href="https://www.thearchercharleston.com/" target="_blank" style="text-decoration: none;">
-                <div class="partner-logo" style="transition: transform 0.3s ease;">The Archer</div>
+            <a href="https://www.thearchercharleston.com/" target="_blank">
+                <div class="partner-logo">The Archer</div>
             </a>
         </div>
         <p style="margin-top: 40px; font-size: 1.1em; opacity: 0.9;">When you dine at these restaurants, you're creating impact</p>
@@ -456,11 +468,11 @@
         <a href="#" class="cta-button">Learn About Partnership</a>
     </div>
     
-    <div class="volunteer-cta" style="background: #f8f9fa; padding: 80px 20px; text-align: center;">
+    <div class="volunteer-cta">
         <div class="container">
             <h2 style="font-size: 2.5em; margin-bottom: 20px; color: #2c3e50;">Want to Make a Difference?</h2>
             <p style="font-size: 1.3em; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; color: #555;">These incredible nonprofits need volunteers like you. Whether you have a few hours a month or want to dive in deeper, there's a way for you to help.</p>
-            <a href="https://theripplefund.org/volunteer/" target="_blank" class="volunteer-button" style="display: inline-block; background: linear-gradient(135deg, #4A90A4 0%, #2E5F75 100%); color: white; padding: 18px 40px; font-size: 1.2em; font-weight: 600; text-decoration: none; border-radius: 50px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: transform 0.3s ease;">Volunteer with a Ripple Organization</a>
+            <a href="https://theripplefund.org/volunteer/" target="_blank" class="volunteer-button">Volunteer with a Ripple Organization</a>
         </div>
     </div>
     
